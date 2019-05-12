@@ -1,0 +1,6 @@
+!arj.exe
+*.log
+*.exe
+.idea/
+demo/
+cmd/platform/server.rar

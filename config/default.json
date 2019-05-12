@@ -1,0 +1,39 @@
+{
+  "SqlSettings": {
+    "DriverName": "mssql",
+    "DataSource": "sqlserver://admin:admin@127.0.0.1:3616?database=assmr_rufr_cbr_ru",
+    "DataSourceReplicas": [],
+    "DataSourceSearchReplicas": [],
+    "MaxIdleConns": 20,
+    "MaxOpenConns": 300,
+    "Trace": false,
+    "AtRestEncryptKey": "tisc6dsshwxjc65vvxn79n4pmf",
+    "QueryTimeout": 30
+  },
+  "LogSettings": {
+    "EnableConsole": true,
+    "ConsoleLevel": "DEBUG",
+    "EnableFile": true,
+    "FileLevel": "INFO",
+    "EventServiceName": "assmr-rufr-assmr.cbr.ru"
+  },
+  "JobSettings": {
+    "RunJobs": true,
+    "RunScheduler": true
+  },
+  "EmailSettings": {
+    "Pop3Login": "rufr@mail.ru",
+    "Pop3Password": "rufr_password",
+    "Pop3Url": "pop.gmail.com:995"
+  },
+  "ExchangeSettings": {
+    "RequestTimeoutSeconds": 15,
+    "Subject": ".*(sff|AS_SMR_from_RUFR).*",
+    "ForceUpdate": false,
+    "DirToDocTemp": "demo",
+    "Docfile_bank": "BANC.DBF",
+    "Docfile_barx": "B_ARX.DBF",
+    "Docfile_strahov": "str_\\d{8}\\.csv$",
+    "Docfile_microfin": "microfin.csv"
+  }
+}
